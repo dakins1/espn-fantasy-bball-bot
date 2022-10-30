@@ -14,6 +14,6 @@ WORKDIR /app
 
 COPY . /app/
 
-CMD sbt compile
+CMD sbt run
 
 # RUN "scala /app/src/main/scala/bballApp.scala"
