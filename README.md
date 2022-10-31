@@ -10,6 +10,8 @@
 
 `docker run bball_app:v1`
 
+- Kinda annoying that we have to run this everytime we make a change -- TODO: Hot reloads??
+
 
 
 

@@ -25,7 +25,7 @@ import sttp.client3._
 
 object EspnAPI {
 
-    def helloWorld(str:String): Unit = {
+    def helloWorld(): Unit = {
         val dummyEndpoint = uri"https://fantasy.espn.com/apis/v3/games/fba/seasons/2023/segments/0/leagues/1823804002"
 
         val client = SimpleHttpClient()
@@ -43,18 +43,6 @@ object EspnAPI {
             case Right(body) => println(s"2xx response to GET:\n$body")
             }
 
-            println("---\n")
-
-            //
-
-            // val request2: Request[String, Any] = basicRequest
-            // .header("X-Correlation-ID", UUID.randomUUID().toString)
-            // .response(asStringAlways)
-            // .body("Hello, world!")
-            // .post(uri"https://httpbin.org/post")
-            // val response2: Response[String] = client.send(request2)
-
-            // println(s"Response to POST:\n${response2.body}")
 
         } finally client.close()
 
