@@ -1,4 +1,8 @@
-name := "fantasyBballApp"
+scalaVersion := "2.13.10"
 version := "1.0"
-// scalaVersion = "3.2.0"
-// latest scala version scala-lang.org/download/all.html
+
+lazy val fanbot = (project in file("."))
+    .settings(
+        name := "fan-bot",
+        libraryDependencies ++= Seq() //for future reference
+    )
