@@ -1,7 +1,9 @@
 
-object BballApp {
+import EspnAPI._
+
+object bballApp {
     def main(args: Array[String]) = {
-        println("This is our dockerized fantasy bball app!!!")
+        EspnAPI.helloWorld()
     }
 
 }
